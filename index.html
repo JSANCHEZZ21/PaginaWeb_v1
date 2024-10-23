@@ -1,39 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preload" href="css/normalize.css" as="style"><!--Tener un buen performance-->
-    <link rel="normalize" href="css/normalize.css">
+    <link rel="normalize" href="css/normalize.css"><!--Normalizar los estilos de los navegadores-->
     <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2? familia=Krub:wght@400; 700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2? familia=Krub:wght@400; 700&display=swap" rel="stylesheet"><!--Agregar una fuente-->
+
     <link rel ="preload" href"css/styless.css" as="style"><!--Tener un buen performance-->
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1 class="titulo">JUAN SEBASTIAN <span>SANCHEZ CHAPARRO</span></h1>
+        <h1 class="titulo">JUAN SEBASTIAN <span>SANCHEZ CHAPARRO</span></h1> <!--Agregar una etiqueta-->
     </header>
-    <nav class="navegacion-principal contenedor  "><!--definir los enlaces -->
+    <div class="nav-bg">
+      <nav< class="navegacion-principal contenedor  "><!--definir los enlaces --> 
         <a href="nosotros.html">Inicio</a><!--href es exclusivos de los enlaces-->
-        <a href="#">Nosotros </a>
+        <a href="#">sobre mi </a>
         <a href="#">Clientes</a>
-        <a href="#">Contactos</a>
-    </nav>
-    <nav>
-        
-    </nav>
+        <a href="#">Contato</a>
+        <!--<img src="img/imagen1.jpg"> <!--Agregar una imagen-->
+      </nav>
+    </div>   
+       
+    
     <section>
         <h2 class="titulo">Diseño y Desarrollo WEB <span>Freelancer</span></h2>
-        <p>
+        
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin-check" width="44" height="44" viewBox="0 0 24 24" stroke-width="3" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
                     <path d="M11.87 21.48a1.992 1.992 0 0 1 -1.283 -.58l-4.244 -4.243a8 8 0 1 1 13.355 -3.474" />
                     <path d="M15 19l2 2l4 -4" />
                 </svg>
-        </p>
+        
         <p>Manizales Caldas </p>
         <a href="#">Contactar</a>
     </section>
@@ -78,9 +81,9 @@
     </main>
    <section>
     <h2>Contacto</h2>
-    <form>
-        <fieldset>
-            <legend>Contactános llenando todos los campos </legend>
+    <form><!--Definir un formulario-->
+        <fieldset><!--Definir un conjunto de campos-->
+            <legend>Contactar llenando todos los campos </legend>
             <div>
                 <label>Nombre</label>
                 <input type="text" placeholder="Tu Nombre">
@@ -101,7 +104,11 @@
             <div>
                 <input type="submit" value="Enviar">
             </div>
-        
+            <div>
+                <label>Eres Humano</label>
+                <input type="radio" placeholder="radio">
+
+            </div>
         </fieldset>
     </form>
     </section>
